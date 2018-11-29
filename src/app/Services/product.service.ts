@@ -10,8 +10,6 @@ import {environment} from "../../environments/environment";
 })
 export class ProductService {
 
-  products: Product[];
-
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]>
