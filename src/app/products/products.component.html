@@ -1,3 +1,7 @@
-<p>
-  products works!
-</p>
+<h2>Our fleamarket products</h2>
+
+<ul *ngIf="products">
+  <li *ngFor="let product of products">
+    {{product.productName}} {{product.productPrize}}
+  </li>
+</ul>
