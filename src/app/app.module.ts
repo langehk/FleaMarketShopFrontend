@@ -16,6 +16,7 @@ import {AuthenticationService} from "./Services/authentication.service";
 import {ProductService} from "./Services/product.service";
 import {CategoryService} from "./Services/category.service";
 import {AuthGuard} from "./guards/auth.guard";
+import {ButtonsModule} from "ngx-bootstrap";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {AuthGuard} from "./guards/auth.guard";
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ButtonsModule.forRoot()
   ],
   providers: [AuthGuard,
     AuthenticationService,
