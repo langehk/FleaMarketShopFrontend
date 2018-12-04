@@ -11,6 +11,11 @@ import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { HttpClientModule } from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
+import {AuthenticationService} from "./Services/authentication.service";
+import {ProductService} from "./Services/product.service";
+import {CategoryService} from "./Services/category.service";
+import {AuthGuard} from "./guards/auth.guard";
 
 @NgModule({
   declarations: [
@@ -25,11 +30,15 @@ import { HttpClientModule } from "@angular/common/http";
     AdminComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGuard,
+    AuthenticationService,
+  ProductService,
+  CategoryService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
