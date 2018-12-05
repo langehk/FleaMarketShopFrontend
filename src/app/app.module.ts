@@ -10,13 +10,14 @@ import { AboutComponent } from './about/about.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
-import { HttpClientModule } from "@angular/common/http";
-import {ReactiveFormsModule} from "@angular/forms";
-import {AuthenticationService} from "./Services/authentication.service";
-import {ProductService} from "./Services/product.service";
-import {CategoryService} from "./Services/category.service";
-import {AuthGuard} from "./guards/auth.guard";
-import {ButtonsModule} from "ngx-bootstrap";
+import { HttpClientModule } from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
+import {AuthenticationService} from './Services/authentication.service';
+import {ProductService} from './Services/product.service';
+import {CategoryService} from './Services/category.service';
+import {AuthGuard} from './guards/auth.guard';
+import {ButtonsModule} from 'ngx-bootstrap';
+import { SvenProductsComponent } from './sven-products/sven-products.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {ButtonsModule} from "ngx-bootstrap";
     AboutComponent,
     ShoppingcartComponent,
     NavbarComponent,
-    AdminComponent
+    AdminComponent,
+    SvenProductsComponent
   ],
   imports: [
     ReactiveFormsModule,

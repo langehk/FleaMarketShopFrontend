@@ -1,0 +1,20 @@
+<div *ngIf="products">
+  <div class="container-fluid">
+  <div class="card-deck">
+    <div *ngFor="let product of products">
+
+        <div class="card border-dark mb-3" style="width: 14em">
+          <img class="card-img-top" src="http://funkyimg.com/i/2NTg2.jpg" alt="Image of {{product.productName}}">
+          <div class="card-body">
+          <h5 class="card-title">{{product.productName}}</h5>
+            <h6 class="card-subtitle">Pris {{product.productPrice}} Kr.</h6>
+            <h6></h6>
+            <a routerLink="/product/{{product.productId}}" class="btn btn-outline-success" style="width: 100%">Details</a>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+<h4 *ngIf="!products">Loading.....</h4>
