@@ -8,6 +8,7 @@ import { LoginComponent} from './login/login.component';
 import { AboutComponent} from './about/about.component';
 import { AdminComponent} from './admin/admin.component';
 import { SvenProductsComponent} from './sven-products/sven-products.component';
+import { SvenDetailsComponent} from './sven-details/sven-details.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'shoppingcart', component: ShoppingcartComponent},
   { path: 'admin', component: AdminComponent},
-  { path: 'svenproducts', component: SvenProductsComponent}
+  { path: 'svenproducts', component: SvenProductsComponent},
+  { path: 'svendetails/:id', component: SvenDetailsComponent}
 ];
 
 

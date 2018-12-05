@@ -16,8 +16,9 @@ import {AuthenticationService} from './Services/authentication.service';
 import {ProductService} from './Services/product.service';
 import {CategoryService} from './Services/category.service';
 import {AuthGuard} from './guards/auth.guard';
-import {ButtonsModule} from 'ngx-bootstrap';
+import {ButtonsModule, CarouselModule} from 'ngx-bootstrap';
 import { SvenProductsComponent } from './sven-products/sven-products.component';
+import { SvenDetailsComponent } from './sven-details/sven-details.component';
 
 @NgModule({
   declarations: [
@@ -30,14 +31,16 @@ import { SvenProductsComponent } from './sven-products/sven-products.component';
     ShoppingcartComponent,
     NavbarComponent,
     AdminComponent,
-    SvenProductsComponent
+    SvenProductsComponent,
+    SvenDetailsComponent
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
+    CarouselModule
   ],
   providers: [AuthGuard,
     AuthenticationService,
