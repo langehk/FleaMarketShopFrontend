@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Product} from '../Models/product';
 import {ProductService} from '../Services/product.service';
 import {ActivatedRoute} from '@angular/router';
+import {ProductImage} from '../Models/productImage';
 
 @Component({
   selector: 'app-sven-details',
@@ -10,6 +11,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class SvenDetailsComponent implements OnInit {
   private product: Product;
+  private prodImages: ProductImage[];
 
   slides = [
     {image: 'http://funkyimg.com/i/2NUez.jpg'},
@@ -25,6 +27,6 @@ export class SvenDetailsComponent implements OnInit {
 
   ngOnInit() {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.productService.getProductById(id).subscribe(prod => {this.product = prod; });
+    this.productService.getProductById(id).subscribe(prod => {this.product = prod; this.prodImages = prod.images; });
   }
 }

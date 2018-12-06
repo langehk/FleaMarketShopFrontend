@@ -1,5 +1,10 @@
-export class Product{
+import {ProductImage} from './productImage';
+
+export class Product {
   productId: number;
   productName: string;
-  productPrize: number;
+  productPrice: number;
+  productDescription: string;
+  mainPictureString: string;
+  images: ProductImage[];
 }
