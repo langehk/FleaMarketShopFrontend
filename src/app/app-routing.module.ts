@@ -11,8 +11,8 @@ import { SvenProductsComponent} from './sven-products/sven-products.component';
 import { SvenDetailsComponent} from './sven-details/sven-details.component';
 import { AddProductComponent } from "./add-product/add-product.component";
 import { UpdateProductComponent} from "./update-product/update-product.component";
-import {AddCategoryComponent} from "./add-category/add-category.component";
-import {UpdateCategoryComponent} from "./update-category/update-category.component";
+import { AddCategoryComponent} from "./add-category/add-category.component";
+import { UpdateCategoryComponent} from "./update-category/update-category.component";
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
