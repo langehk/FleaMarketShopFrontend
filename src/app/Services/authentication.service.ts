@@ -1,5 +1,4 @@
 import {Observable} from "rxjs";
-import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {Injectable} from "@angular/core";
 import {map} from "rxjs/operators";
@@ -9,7 +8,7 @@ export class AuthenticationService {
 
   constructor(private http: HttpClient) {}
 
-  apiUrl = 'https://fleamarketshop.azurewebsites.net';
+  apiUrl = 'https://fleamarket.azurewebsites.net';
   login(username: string, password: string): Observable<boolean> {
     return this.http.post<any>(this.apiUrl + '/token', { username, password })
       .pipe(map(response => {
