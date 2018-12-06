@@ -22,6 +22,8 @@ import { SvenDetailsComponent } from './sven-details/sven-details.component';
 import { ProductImageService} from "./Services/product-image.service";
 import { AddProductComponent } from './add-product/add-product.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { UpdateCategoryComponent } from './update-category/update-category.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     SvenProductsComponent,
     SvenDetailsComponent,
     AddProductComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    AddCategoryComponent,
+    UpdateCategoryComponent
   ],
   imports: [
     ReactiveFormsModule,

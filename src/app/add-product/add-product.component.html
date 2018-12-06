@@ -1,3 +1,36 @@
-<p>
-  add-product works!
-</p>
+<button routerLink="/products">Back</button>
+
+<form [formGroup]="productForm" (ngSubmit)="save()">
+
+  <label>
+    Product Name:
+    <input type="text" formControlName="productName">
+  </label>
+
+  <label>
+    Product price:
+    <input type="text" formControlName="productPrice">
+  </label>
+
+  <label>
+    Product Description:
+    <input type="text" formControlName="productDescription">
+  </label>
+
+  <label>
+    Main Picture Url:
+    <input type="text" formControlName="mainPictureString">
+  </label>
+
+  <label>
+    Category:
+    <input type="text" formControlName="category">
+  </label>
+
+  <label>
+    Product Detail Images-URL's:
+    <input type="text" formControlName="productImages">
+  </label>
+
+  <button type="submit" >Save</button>
+</form>

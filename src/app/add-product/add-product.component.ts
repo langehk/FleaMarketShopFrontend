@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService} from "../Services/product.service";
 import {FormControl, FormGroup} from "@angular/forms";
 import {Router} from "@angular/router";
-import {Category} from "../Models/category";
-import {ProductImage} from "../Models/productImage";
+
 
 @Component({
   selector: 'app-add-product',
@@ -16,7 +15,7 @@ export class AddProductComponent implements OnInit {
     productName: new FormControl(''),
     productPrice: new FormControl(''),
     productDescription: new FormControl(''),
-    maainPictureString: new FormControl(''),
+    mainPictureString: new FormControl(''),
     category: new FormControl(''),
     productImages: new FormControl('')
   });
@@ -29,6 +28,8 @@ export class AddProductComponent implements OnInit {
   save(){
     const product = this.productForm.value;
     this.productService.addProduct(product)
-      .subscribe(() => { this.router.navigateByUrl('/admin')})
+      .subscribe(() => {
+        this.router.navigateByUrl('/admin');
+      });
   }
 }
