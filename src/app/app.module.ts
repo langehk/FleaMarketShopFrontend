@@ -19,6 +19,7 @@ import {AuthGuard} from './guards/auth.guard';
 import {ButtonsModule, CarouselModule} from 'ngx-bootstrap';
 import { SvenProductsComponent } from './sven-products/sven-products.component';
 import { SvenDetailsComponent } from './sven-details/sven-details.component';
+import { ProductImageService} from "./Services/product-image.service";
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { SvenDetailsComponent } from './sven-details/sven-details.component';
   providers: [AuthGuard,
     AuthenticationService,
   ProductService,
-  CategoryService],
+  CategoryService, ProductImageService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
