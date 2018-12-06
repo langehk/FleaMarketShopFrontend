@@ -16,6 +16,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ProductService {
+  products: Product[];
 
   constructor(private http: HttpClient, private authService: AuthenticationService) { }
 
@@ -26,5 +27,26 @@ export class ProductService {
   getProductById(id: number): Observable<Product> {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
     return this.http.get<Product>( environment.apiUrl + '/product/' + id, httpOptions);
+  }
+
+  addProduct(product: Product): Observable<Product>
+  {
+    httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
+
+    return this.http.post<Product>( environment.apiUrl, product, httpOptions);
+  }
+
+  updateProduct(product: Product): Observable<Product>
+  {
+    httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
+
+    return this.http.put<Product>(environment.apiUrl + '/product/' + product.productId, httpOptions);
+  }
+
+  deleteProduct(id: number): Observable<any>
+  {
+    httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
+
+    return this.http.delete(environment.apiUrl + '/product/' + id, httpOptions);
   }
 }
