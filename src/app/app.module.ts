@@ -6,24 +6,24 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { AuthenticationService} from './Services/authentication.service';
-import { ProductService} from './Services/product.service';
-import { CategoryService} from './Services/category.service';
-import { AuthGuard} from './guards/auth.guard';
+import { AuthenticationService} from './shared/Services/authentication.service';
+import { ProductService} from './shared/Services/product.service';
+import { CategoryService} from './shared/Services/category.service';
+import { AuthGuard} from './shared/guards/auth.guard';
 import { ButtonsModule, CarouselModule} from 'ngx-bootstrap';
-import { ProductsComponent } from './products/products.component';
-import { productDetailsComponent } from './productDetails/productDetails.component';
-import { ProductImageService} from "./Services/product-image.service";
-import { AddProductComponent } from './add-product/add-product.component';
-import { UpdateProductComponent } from './update-product/update-product.component';
-import { AddCategoryComponent } from './add-category/add-category.component';
-import { UpdateCategoryComponent } from './update-category/update-category.component';
-import { ListProductsComponent } from './list-products/list-products.component';
-import { ListCategoriesComponent } from './list-categories/list-categories.component';
+import { ProductsComponent } from './product/products/products.component';
+import { productDetailsComponent } from './product/productDetails/productDetails.component';
+import { ProductImageService} from "./shared/Services/product-image.service";
+import { AddProductComponent } from './product/add-product/add-product.component';
+import { UpdateProductComponent } from './product/update-product/update-product.component';
+import { AddCategoryComponent } from './category/add-category/add-category.component';
+import { UpdateCategoryComponent } from './category/update-category/update-category.component';
+import { ListProductsComponent } from './product/list-products/list-products.component';
+import { ListCategoriesComponent } from './category/list-categories/list-categories.component';
 
 @NgModule({
   declarations: [

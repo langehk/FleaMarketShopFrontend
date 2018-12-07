@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Product} from '../Models/product';
-import {ProductService} from '../Services/product.service';
+import {Product} from '../../shared/Models/product';
+import {ProductService} from '../../shared/Services/product.service';
 import {ActivatedRoute} from '@angular/router';
-import {ProductImage} from "../Models/productImage";
+import {ProductImage} from "../../shared/Models/productImage";
 
 @Component({
   selector: 'productDetailsComponent',

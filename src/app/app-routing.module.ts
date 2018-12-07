@@ -5,12 +5,12 @@ import { ShoppingcartComponent} from './shoppingcart/shoppingcart.component';
 import { LoginComponent} from './login/login.component';
 import { AboutComponent} from './about/about.component';
 import { AdminComponent} from './admin/admin.component';
-import { ProductsComponent} from './products/products.component';
-import { productDetailsComponent} from './productDetails/productDetails.component';
-import { AddProductComponent } from "./add-product/add-product.component";
-import { UpdateProductComponent} from "./update-product/update-product.component";
-import { AddCategoryComponent} from "./add-category/add-category.component";
-import { UpdateCategoryComponent} from "./update-category/update-category.component";
+import { ProductsComponent} from './product/products/products.component';
+import { productDetailsComponent} from './product/productDetails/productDetails.component';
+import { AddProductComponent } from "./product/add-product/add-product.component";
+import { UpdateProductComponent} from "./product/update-product/update-product.component";
+import { AddCategoryComponent} from "./category/add-category/add-category.component";
+import { UpdateCategoryComponent} from "./category/update-category/update-category.component";
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
