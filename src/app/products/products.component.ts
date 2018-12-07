@@ -4,10 +4,10 @@ import {ProductService} from '../Services/product.service';
 
 @Component({
   selector: 'app-sven-products',
-  templateUrl: './sven-products.component.html',
-  styleUrls: ['./sven-products.component.css']
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css']
 })
-export class SvenProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit {
 
   products: Product[];
 

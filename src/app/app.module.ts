@@ -15,8 +15,8 @@ import { ProductService} from './Services/product.service';
 import { CategoryService} from './Services/category.service';
 import { AuthGuard} from './guards/auth.guard';
 import { ButtonsModule, CarouselModule} from 'ngx-bootstrap';
-import { SvenProductsComponent } from './sven-products/sven-products.component';
-import { SvenDetailsComponent } from './sven-details/sven-details.component';
+import { ProductsComponent } from './products/products.component';
+import { productDetailsComponent } from './productDetails/productDetails.component';
 import { ProductImageService} from "./Services/product-image.service";
 import { AddProductComponent } from './add-product/add-product.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
@@ -32,8 +32,8 @@ import { UpdateCategoryComponent } from './update-category/update-category.compo
     ShoppingcartComponent,
     NavbarComponent,
     AdminComponent,
-    SvenProductsComponent,
-    SvenDetailsComponent,
+    ProductsComponent,
+    productDetailsComponent,
     AddProductComponent,
     UpdateProductComponent,
     AddCategoryComponent,

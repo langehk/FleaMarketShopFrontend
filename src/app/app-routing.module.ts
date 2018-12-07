@@ -5,8 +5,8 @@ import { ShoppingcartComponent} from './shoppingcart/shoppingcart.component';
 import { LoginComponent} from './login/login.component';
 import { AboutComponent} from './about/about.component';
 import { AdminComponent} from './admin/admin.component';
-import { SvenProductsComponent} from './sven-products/sven-products.component';
-import { SvenDetailsComponent} from './sven-details/sven-details.component';
+import { ProductsComponent} from './products/products.component';
+import { productDetailsComponent} from './productDetails/productDetails.component';
 import { AddProductComponent } from "./add-product/add-product.component";
 import { UpdateProductComponent} from "./update-product/update-product.component";
 import { AddCategoryComponent} from "./add-category/add-category.component";
@@ -18,8 +18,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'shoppingcart', component: ShoppingcartComponent},
   { path: 'admin', component: AdminComponent},
-  { path: 'svenproducts', component: SvenProductsComponent},
-  { path: 'svendetails/:id', component: SvenDetailsComponent},
+  { path: 'products', component: ProductsComponent},
+  { path: 'productdetails/:id', component: productDetailsComponent},
   { path: 'addproduct', component: AddProductComponent},
   { path: 'updateproduct', component: UpdateProductComponent},
   { path: 'addcategory', component: AddCategoryComponent},

@@ -2,6 +2,6 @@ import {Product} from "./product";
 
 export class ProductImage {
   productImageId: number;
-  productImageString: string;
+  image: string;
   product: Product;
 }

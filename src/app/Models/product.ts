@@ -8,5 +8,5 @@ export class Product{
   productDescription: string;
   mainPictureString: string;
   category: Category;
-  productImages: ProductImage[];
+  images: ProductImage[];
 }
