@@ -1,8 +1,5 @@
 <div class="container">
   <div class="row">
-    <button class="btn btn-primary mt-1" routerLink="add-category">Add Category</button>
-  </div>
-  <div class="row">
     <ul *ngIf="categories">
       <li *ngFor="let category of categories">
         <h4>{{category.categoryId}} {{category.categoryName}}</h4>
