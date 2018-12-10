@@ -24,7 +24,9 @@ import { AddCategoryComponent } from './category/add-category/add-category.compo
 import { UpdateCategoryComponent } from './category/update-category/update-category.component';
 import { ListProductsComponent } from './product/list-products/list-products.component';
 import { ListCategoriesComponent } from './category/list-categories/list-categories.component';
-import { SelectDropDownModule } from 'ngx-select-dropdown'
+import { SelectDropDownModule } from 'ngx-select-dropdown';
+import { CategoryComponent } from './category/category/category.component';
+import { ProductsByCategoryComponent } from './category/products-by-category/products-by-category.component'
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { SelectDropDownModule } from 'ngx-select-dropdown'
     AddCategoryComponent,
     UpdateCategoryComponent,
     ListProductsComponent,
-    ListCategoriesComponent
+    ListCategoriesComponent,
+    CategoryComponent,
+    ProductsByCategoryComponent
   ],
   imports: [
     ReactiveFormsModule,

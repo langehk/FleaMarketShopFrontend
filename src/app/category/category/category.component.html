@@ -1,0 +1,21 @@
+<div *ngIf="categories">
+  <div class="container-fluid">
+    <div class="card-deck">
+      <div *ngFor="let category of categories">
+
+        <div class="card border-dark mb-3" style="width: 14em">
+
+          <div class="card-body">
+
+            <h5 class="card-title">{{category.categoryName}}</h5>
+
+
+            <a routerLink="/category/{{category.categoryId}}" class="btn btn-outline-success" style="width: 100%">Details</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<h4 *ngIf="!categories">Loading.....</h4>

@@ -11,6 +11,8 @@ import { AddProductComponent } from "./product/add-product/add-product.component
 import { UpdateProductComponent} from "./product/update-product/update-product.component";
 import { AddCategoryComponent} from "./category/add-category/add-category.component";
 import { UpdateCategoryComponent} from "./category/update-category/update-category.component";
+import { CategoryComponent} from './category/category/category.component';
+
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -23,7 +25,9 @@ const routes: Routes = [
   { path: 'addproduct', component: AddProductComponent},
   { path: 'updateproduct', component: UpdateProductComponent},
   { path: 'addcategory', component: AddCategoryComponent},
-  {path: 'updatecategory', component: UpdateCategoryComponent}
+  {path: 'updatecategory', component: UpdateCategoryComponent},
+  {path: 'category', component: CategoryComponent}
+
 ];
 
 
