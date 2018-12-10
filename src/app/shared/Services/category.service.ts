@@ -49,6 +49,6 @@ export class CategoryService {
   {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
-    return this.http.delete(environment.apiUrl + '/category' + id, httpOptions);
+    return this.http.delete(environment.apiUrl + '/category/' + id, httpOptions);
   }
 }

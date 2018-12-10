@@ -1,3 +1,15 @@
-<p>
-  list-categories works!
-</p>
+<div class="container">
+  <div class="row">
+    <button class="btn btn-primary mt-1" routerLink="add-category">Add Category</button>
+  </div>
+  <div class="row">
+    <ul *ngIf="categories">
+      <li *ngFor="let category of categories">
+        <h4>{{category.categoryId}} {{category.categoryName}}</h4>
+        <button routerLink="/updatecategory/{{category.categoryId}}" class="btn btn-warning">Update</button>
+        <button (click)="delete(category.categoryId)" class="btn btn-danger">Delete</button>
+      </li>
+    </ul>
+    <h4 *ngIf="!categories">Loading.....</h4>
+  </div>
+</div>

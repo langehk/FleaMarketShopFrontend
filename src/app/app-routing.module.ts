@@ -13,6 +13,7 @@ import { AddCategoryComponent} from './category/add-category/add-category.compon
 import { UpdateCategoryComponent} from './category/update-category/update-category.component';
 import { CategoryComponent} from './category/category/category.component';
 import { ProductsByCategoryComponent} from './category/products-by-category/products-by-category.component';
+import {ListCategoriesComponent} from "./category/list-categories/list-categories.component";
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -25,12 +26,11 @@ const routes: Routes = [
   { path: 'addproduct', component: AddProductComponent},
   { path: 'updateproduct', component: UpdateProductComponent},
   { path: 'addcategory', component: AddCategoryComponent},
-  {path: 'updatecategory', component: UpdateCategoryComponent},
-  {path: 'category', component: CategoryComponent},
-  {path: 'category/:id', component: ProductsByCategoryComponent}
-
+  { path: 'updatecategory/:id', component: UpdateCategoryComponent},
+  { path: 'category', component: CategoryComponent},
+  { path: 'category/:id', component: ProductsByCategoryComponent},
+  { path: 'categorylist', component: ListCategoriesComponent}
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
