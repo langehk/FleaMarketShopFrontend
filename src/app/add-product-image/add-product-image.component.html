@@ -1,0 +1,15 @@
+<form [formGroup]="productImageForm" (ngSubmit)="save()">
+
+  <label>
+    Image String:
+    <input type="text" formControlName="image">
+  </label>
+
+  <div formGroupName="product">
+    <label>
+      Product number:
+      <input type="number" formControlName="ProductId">
+    </label>
+  </div>
+  <button type="submit" >Save</button>
+</form>

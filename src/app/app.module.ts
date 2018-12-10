@@ -24,6 +24,7 @@ import { AddCategoryComponent } from './category/add-category/add-category.compo
 import { UpdateCategoryComponent } from './category/update-category/update-category.component';
 import { ListProductsComponent } from './product/list-products/list-products.component';
 import { ListCategoriesComponent } from './category/list-categories/list-categories.component';
+import { AddProductImageComponent } from './add-product-image/add-product-image.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ListCategoriesComponent } from './category/list-categories/list-categor
     AddCategoryComponent,
     UpdateCategoryComponent,
     ListProductsComponent,
-    ListCategoriesComponent
+    ListCategoriesComponent,
+    AddProductImageComponent
   ],
   imports: [
     ReactiveFormsModule,

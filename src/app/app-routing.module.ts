@@ -11,6 +11,7 @@ import { AddProductComponent } from "./product/add-product/add-product.component
 import { UpdateProductComponent} from "./product/update-product/update-product.component";
 import { AddCategoryComponent} from "./category/add-category/add-category.component";
 import { UpdateCategoryComponent} from "./category/update-category/update-category.component";
+import { AddProductImageComponent} from './add-product-image/add-product-image.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'addproduct', component: AddProductComponent},
   { path: 'updateproduct', component: UpdateProductComponent},
   { path: 'addcategory', component: AddCategoryComponent},
-  {path: 'updatecategory', component: UpdateCategoryComponent}
+  {path: 'updatecategory', component: UpdateCategoryComponent},
+  {path: 'addProductImage', component: AddProductImageComponent}
 ];
 
 

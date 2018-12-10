@@ -35,7 +35,7 @@ export class ProductImageService {
   {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
-    return this.http.post<ProductImage>( environment.apiUrl, productImage, httpOptions);
+    return this.http.post<ProductImage>( environment.apiUrl + '/productImage', productImage, httpOptions);
   }
 
   updateProductImage(productImage: ProductImage): Observable<ProductImage>
