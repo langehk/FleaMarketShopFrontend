@@ -1,3 +1,10 @@
-<p>
-  add-category works!
-</p>
+<button routerLink="">Home</button>
+
+<form [formGroup]="categoryForm" (ngSubmit)="save()">
+
+  <label>
+    Category Name:
+    <input type="text" formControlName="categoryName">
+  </label>
+  <button type="submit" >Save</button>
+</form>

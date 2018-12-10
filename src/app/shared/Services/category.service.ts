@@ -35,7 +35,7 @@ export class CategoryService {
   {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
-    return this.http.post<Category>( environment.apiUrl, category, httpOptions);
+    return this.http.post<Category>( environment.apiUrl + /category/, category, httpOptions);
   }
 
   updateCategory(category: Category): Observable<Category>
