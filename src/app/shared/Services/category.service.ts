@@ -35,14 +35,14 @@ export class CategoryService {
   {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
-    return this.http.post<Category>( environment.apiUrl + /category/, category, httpOptions);
+    return this.http.post<Category>( environment.apiUrl + '/category/', category, httpOptions);
   }
 
   updateCategory(category: Category): Observable<Category>
   {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
-    return this.http.put<Category>(environment.apiUrl + '/category/' + category.categoryId, httpOptions);
+    return this.http.put<Category>(environment.apiUrl + '/category/' + category.categoryId, category, httpOptions);
   }
 
   deleteCategory(id: number): Observable<any>

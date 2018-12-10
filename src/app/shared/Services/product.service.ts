@@ -40,7 +40,7 @@ export class ProductService {
   {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
-    return this.http.put<Product>(environment.apiUrl + '/product/' + product.productId, httpOptions);
+    return this.http.put<Product>(environment.apiUrl + '/product/' + product.productId, product, httpOptions);
   }
 
   deleteProduct(id: number): Observable<any>
