@@ -3,7 +3,6 @@ import { ProductService} from "../../shared/Services/product.service";
 import {FormControl, FormGroup} from "@angular/forms";
 import {Router} from "@angular/router";
 
-
 @Component({
   selector: 'app-add-product',
   templateUrl: './add-product.component.html',
@@ -16,8 +15,9 @@ export class AddProductComponent implements OnInit {
     productPrice: new FormControl(''),
     productDescription: new FormControl(''),
     mainPictureString: new FormControl(''),
-    category: new FormControl(''),
-    productImages: new FormControl('')
+    productImages: new FormControl(''),
+    category: new FormGroup({
+      categoryId: new FormControl('')})
   });
 
   constructor(private productService: ProductService, private router: Router) { }

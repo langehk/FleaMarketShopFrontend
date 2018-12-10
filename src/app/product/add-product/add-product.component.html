@@ -9,7 +9,7 @@
 
   <label>
     Product price:
-    <input type="text" formControlName="productPrice">
+    <input type="number" formControlName="productPrice">
   </label>
 
   <label>
@@ -23,14 +23,14 @@
   </label>
 
   <label>
-    Category:
-    <input type="text" formControlName="category">
-  </label>
-
-  <label>
     Product Detail Images-URL's:
     <input type="text" formControlName="productImages">
   </label>
-
+<div formGroupName="category">
+  <label>
+    Category:
+    <input type="number" formControlName="categoryId">
+  </label>
+</div>
   <button type="submit" >Save</button>
 </form>
