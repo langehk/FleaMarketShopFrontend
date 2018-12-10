@@ -16,8 +16,8 @@ import { CategoryService} from './shared/Services/category.service';
 import { AuthGuard} from './shared/guards/auth.guard';
 import { ButtonsModule, CarouselModule} from 'ngx-bootstrap';
 import { ProductsComponent } from './product/products/products.component';
-import { productDetailsComponent } from './product/productDetails/productDetails.component';
-import { ProductImageService} from "./shared/Services/product-image.service";
+import { ProductDetailsComponent } from './product/product-details/product-details.component';
+import { ProductImageService} from './shared/Services/product-image.service';
 import { AddProductComponent } from './product/add-product/add-product.component';
 import { UpdateProductComponent } from './product/update-product/update-product.component';
 import { AddCategoryComponent } from './category/add-category/add-category.component';
@@ -38,7 +38,7 @@ import { ProductsByCategoryComponent } from './category/products-by-category/pro
     NavbarComponent,
     AdminComponent,
     ProductsComponent,
-    productDetailsComponent,
+    ProductDetailsComponent,
     AddProductComponent,
     UpdateProductComponent,
     AddCategoryComponent,
