@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://fleamarket.azurewebsites.net/api'
+  apiUrl: 'https://fleamarketshop.azurewebsites.net/api'
 };
 
 /*

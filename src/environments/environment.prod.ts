@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://fleamarket.azurewebsites.net/api'
+  apiUrl: 'https://fleamarketshop.azurewebsites.net/api'
 };
