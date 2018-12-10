@@ -1,0 +1,9 @@
+<carousel>
+  <slide *ngFor="let prodimage of prodImages">
+    <img [src]="prodimage.image" alt="image slide" style="display: block; width: 100%;">
+  </slide>
+</carousel>
+<br/>
+<h1>{{product.productName}}</h1>
+<p>{{product.productDescription}}</p>
+<h4>Pris: {{product.productPrice}}Kr.</h4>
