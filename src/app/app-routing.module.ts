@@ -13,8 +13,9 @@ import { AddCategoryComponent} from './category/add-category/add-category.compon
 import { UpdateCategoryComponent} from './category/update-category/update-category.component';
 import { CategoryComponent} from './category/category/category.component';
 import { ProductsByCategoryComponent} from './category/products-by-category/products-by-category.component';
-import {ListCategoriesComponent} from "./category/list-categories/list-categories.component";
-import {ListProductsComponent} from "./product/list-products/list-products.component";
+import {ListCategoriesComponent} from './category/list-categories/list-categories.component';
+import {ListProductsComponent} from './product/list-products/list-products.component';
+import {AddProductImageComponent} from './productimage/add-product-image/add-product-image.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'category', component: CategoryComponent},
   { path: 'category/:id', component: ProductsByCategoryComponent},
   { path: 'categorylist', component: ListCategoriesComponent},
-  { path: 'productlist', component: ListProductsComponent}
+  { path: 'productlist', component: ListProductsComponent},
+  { path: 'addproductimage', component: AddProductImageComponent}
 ];
 
 @NgModule({

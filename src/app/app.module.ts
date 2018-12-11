@@ -26,7 +26,8 @@ import { ListProductsComponent } from './product/list-products/list-products.com
 import { ListCategoriesComponent } from './category/list-categories/list-categories.component';
 import { SelectDropDownModule } from 'ngx-select-dropdown';
 import { CategoryComponent } from './category/category/category.component';
-import { ProductsByCategoryComponent } from './category/products-by-category/products-by-category.component'
+import { ProductsByCategoryComponent } from './category/products-by-category/products-by-category.component';
+import { AddProductImageComponent } from './productimage/add-product-image/add-product-image.component'
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ProductsByCategoryComponent } from './category/products-by-category/pro
     ListProductsComponent,
     ListCategoriesComponent,
     CategoryComponent,
-    ProductsByCategoryComponent
+    ProductsByCategoryComponent,
+    AddProductImageComponent
   ],
   imports: [
     ReactiveFormsModule,
