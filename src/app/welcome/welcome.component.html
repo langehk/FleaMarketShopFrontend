@@ -1,8 +1,7 @@
 <div class="body">
   <h1 class="body">
-    Welcome to our flea market shop!
+    <p class="center"> Welcome to our flea market shop!</p>
   </h1>
-
   <img src="http://funkyimg.com/i/2P7cW.png" class="center">
 
   <div *ngIf="products">
@@ -11,8 +10,8 @@
         <div *ngFor="let product of products">
 
           <div class="card border-dark mb-3" style="width: 14em">
-            <img class="card-img-top" src={{product.mainPictureString}} alt="Image of {{product.productName}}">
-            <div class="card-body">
+            <img class="card-img-top" style="height: 150px" src={{product.mainPictureString}} alt="Image of {{product.productName}}">
+            <div class="card-body" style="background: lightgray">
               <h5 class="card-title">{{product.productName}}</h5>
               <h6 class="card-subtitle">Pris {{product.productPrice}} Kr.</h6>
               <a routerLink="/productdetails/{{product.productId}}" class="btn btn-outline-success" style="width: 100%">Details</a>
@@ -24,10 +23,6 @@
     </div>
   </div>
   <h4 *ngIf="!products">Loading.....</h4>
-
-
-
-
 </div>
 
 

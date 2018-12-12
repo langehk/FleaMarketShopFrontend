@@ -1,11 +1,12 @@
-<div *ngIf="categories">
+<body>
+  <div *ngIf="categories">
   <div class="container-fluid">
     <div class="card-deck">
       <div *ngFor="let category of categories">
 
         <div class="card border-dark mb-3" style="width: 14em">
 
-          <div class="card-body">
+          <div class="card-body" style="background: lightgray">
 
             <h5 class="card-title">{{category.categoryName}}</h5>
 
@@ -19,3 +20,4 @@
   </div>
 </div>
 <h4 *ngIf="!categories">Loading.....</h4>
+</body>
