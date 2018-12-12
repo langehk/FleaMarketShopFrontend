@@ -16,9 +16,7 @@ export class UpdateProductComponent implements OnInit {
     productName: new FormControl(''),
     productPrice: new FormControl(''),
     productDescription: new FormControl(''),
-    mainPictureString: new FormControl(''),
-    category: new FormGroup({
-      categoryId: new FormControl('')})
+    mainPictureString: new FormControl('')
   });
 
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) { }
@@ -31,9 +29,7 @@ export class UpdateProductComponent implements OnInit {
         productName: product.productName,
         productPrice: product.productPrice,
         productDescription: product.productDescription,
-        mainPictureString: product.mainPictureString,
-        product: new FormGroup({
-          Product: new FormControl('')})
+        mainPictureString: product.mainPictureString
       });
     });
   }
