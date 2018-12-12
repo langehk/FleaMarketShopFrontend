@@ -10,8 +10,8 @@ import {ProductImage} from '../../shared/Models/productImage';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  private product: Product;
-  private prodImages: ProductImage[];
+  product: Product;
+  prodImages: ProductImage[];
 
   constructor(private productService: ProductService,
               private route: ActivatedRoute) { }
