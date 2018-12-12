@@ -35,7 +35,7 @@ const routes: Routes = [
   { path: 'categorylist', component: ListCategoriesComponent},
   { path: 'productlist', component: ListProductsComponent},
   { path: 'addproductimage', component: AddProductImageComponent},
-  { path: 'pilist', component: ListProductImageComponent}
+  { path: 'productimagelist', component: ListProductImageComponent}
 ];
 
 @NgModule({
