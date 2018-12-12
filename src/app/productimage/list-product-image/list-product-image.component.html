@@ -1,6 +1,6 @@
 <ul class="list-group" *ngIf="productimages">
   <li class="list-group-item" *ngFor="let pi of productimages">
-    {{pi.image}}
+    {{pi.productImageId}} {{pi.image}}
     <img class="img-thumbnail" src="{{pi.image}}" style="height: 50px">
     <div style="float: right">
       <button class="btn btn-outline-success" routerLink="">Delete</button>
