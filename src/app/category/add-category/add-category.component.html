@@ -1,12 +1,14 @@
-
-
 <body>
-  <button routerLink="">Home</button>
+  <button ng-class="" routerLink="">Home</button>
+  <br />
+  <br />
+  <div style="text-align: center;">
 <form [formGroup]="categoryForm" (ngSubmit)="save()">
   <label>
     Category Name:
-    <input type="text" formControlName="categoryName">
+    <input type="text" style="background: darkgray" formControlName="categoryName">
   </label>
   <button type="submit" >Save</button>
   </form>
+    </div>
 </body>

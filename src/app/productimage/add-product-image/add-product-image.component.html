@@ -1,15 +1,21 @@
-<form [formGroup]="productImageForm" (ngSubmit)="save()">
 
+<body>
+  <div style="text-align: center;">
+  <form [formGroup]="productImageForm" (ngSubmit)="save()">
+    <br/>
+    <br/>
   <label>
     Image String:
-    <input type="text" formControlName="image">
+    <input type="text" style="background: darkgray" formControlName="image">
   </label>
 
   <div formGroupName="product">
     <label>
       Product number:
-      <input type="number" formControlName="ProductId">
+      <input type="number" style="background: darkgray" formControlName="ProductId">
     </label>
   </div>
   <button type="submit" >Save</button>
-</form>
+  </form>
+  </div>
+</body>
