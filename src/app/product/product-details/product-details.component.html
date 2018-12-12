@@ -1,6 +1,6 @@
 <body>
 <br/>
-<div class="card border-dark mb-5" style="width: 50%">
+<div class="card border-dark shadow-lg p-1 bg-light rounded" style="width: 50%">
     <carousel>
       <slide *ngFor="let prodimage of prodImages">
         <img [src]="prodimage.image" alt="image slide" style="display: block; width: 100%; bo">
@@ -9,7 +9,7 @@
  </div>
 <br/>
 
-<div class="card" style="width: 18rem;">
+<div class="card shadow-lg bg-light" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">{{product.productName}}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{product.productPrice}}Kr.</h6>
