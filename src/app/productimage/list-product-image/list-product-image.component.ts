@@ -17,4 +17,7 @@ export class ListProductImageComponent implements OnInit {
     this.productimageservice.getProductImages().subscribe(productimages => {this.productimages = productimages; });
   }
 
+  delete(id: number){
+    this.productimageservice.deleteProductImage(id).subscribe();
+  }
 }
