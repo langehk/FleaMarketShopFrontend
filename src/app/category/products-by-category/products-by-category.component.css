@@ -1,3 +1,7 @@
 .container-fluid{
   margin-top: 20px;
 }
+body {
+  background-color: burlywood;
+  color: darkgreen;
+}
