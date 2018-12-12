@@ -20,7 +20,7 @@ li a {
 
 li a:hover:not(.active) {
   background-color: black;
-  color: #4CAF50;
+  color: darkgreen;
 }
 
 .active {

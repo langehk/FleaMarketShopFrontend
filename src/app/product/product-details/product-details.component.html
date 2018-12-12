@@ -1,9 +1,23 @@
-<carousel>
-  <slide *ngFor="let prodimage of prodImages">
-    <img [src]="prodimage.image" alt="image slide" style="display: block; width: 100%;">
-  </slide>
-</carousel>
+<body>
 <br/>
-<h1>{{product.productName}}</h1>
-<p>{{product.productDescription}}</p>
-<h4>Pris: {{product.productPrice}}Kr.</h4>
+<div class="card border-dark shadow-lg p-1 bg-light rounded" style="width: 50%">
+    <carousel>
+      <slide *ngFor="let prodimage of prodImages">
+        <img [src]="prodimage.image" alt="image slide" style="display: block; width: 100%; bo">
+      </slide>
+    </carousel>
+ </div>
+<br/>
+
+<div class="card shadow-lg bg-light" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{product.productName}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{product.productPrice}}Kr.</h6>
+    <p class="card-text">{{product.productDescription}}</p>
+    <a href="#" class="card-link">Vis store billeder</a>
+    <a href="#" class="card-link">Køb</a>
+  </div>
+</div>
+
+<br/>
+</body>
