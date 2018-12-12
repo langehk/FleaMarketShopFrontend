@@ -14,10 +14,15 @@ export class ListProductImageComponent implements OnInit {
   constructor(private productimageservice: ProductImageService) { }
 
   ngOnInit() {
-    this.productimageservice.getProductImages().subscribe(productimages => {this.productimages = productimages; });
+    this.refresh();
   }
 
-  delete(id: number){
-    this.productimageservice.deleteProductImage(id).subscribe();
+  refresh() {
+    this.productimageservice.getProductImages().subscribe(productimages => {this.productimages = productimages; });
+
+  }
+
+  delete(id: number) {
+    this.productimageservice.deleteProductImage(id).subscribe(() => {this.refresh(); });
   }
 }
