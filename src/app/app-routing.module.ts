@@ -17,6 +17,7 @@ import {ListCategoriesComponent} from './category/list-categories/list-categorie
 import {ListProductsComponent} from './product/list-products/list-products.component';
 import {AddProductImageComponent} from './productimage/add-product-image/add-product-image.component';
 import {ListProductImageComponent} from './productimage/list-product-image/list-product-image.component';
+import {BsDropdownModule} from "ngx-bootstrap";
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -39,7 +40,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes), BsDropdownModule.forRoot()],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
