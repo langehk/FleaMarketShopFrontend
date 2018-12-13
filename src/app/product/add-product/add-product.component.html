@@ -37,13 +37,10 @@
   <br />
 
       <div formGroupName="category">
-        <label>
-          <p>Category:</p>
-      <input style="background: darkgray" type="number" formControlName="categoryId">
-      </label>
+      <select formControlName="categoryId">
+        <option *ngFor="let cat of categories" [value]="cat.categoryId">{{cat.categoryName}}</option>
+      </select>
 
-      <br />
-      <br />
       </div>
 
   <button type="submit" >Save</button>
