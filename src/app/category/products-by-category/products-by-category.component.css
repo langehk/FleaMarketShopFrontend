@@ -1,7 +1,10 @@
 .container-fluid{
-  margin-top: 20px;
 }
 body {
   background-color: burlywood;
   color: darkgreen;
+}
+
+.card {
+  margin-top: 20px;
 }
