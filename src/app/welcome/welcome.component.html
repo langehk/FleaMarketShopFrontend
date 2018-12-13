@@ -1,11 +1,19 @@
 <div class="body">
-  <h1 class="body">
-    <p class="center"> Welcome to our flea market shop!</p>
-  </h1>
-  <img src="http://funkyimg.com/i/2P7cW.png" class="center">
+
+  <div class="heading-top">
+    <h1>Velkommen til Danmarks største handelsplatform!</h1>
+
+    <h3> - Over 70.000 daglige besøgende</h3>
+
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/SFpiOoWFNNg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+
+  <img src="http://funkyimg.com/i/2P7cW.png" class="frontpage-picture-center">
 
   <div *ngIf="products">
     <div class="container-fluid">
+      <div class="center">
       <div class="card-deck">
         <div *ngFor="let product of products">
 
@@ -17,7 +25,7 @@
               <a routerLink="/productdetails/{{product.productId}}" class="btn btn-outline-success" style="width: 100%">Details</a>
             </div>
           </div>
-
+        </div>
         </div>
       </div>
     </div>
