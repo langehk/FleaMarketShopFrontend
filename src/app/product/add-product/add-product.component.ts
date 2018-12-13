@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService} from "../../shared/Services/product.service";
 import {FormControl, FormGroup} from "@angular/forms";
 import {Router} from "@angular/router";
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @Component({
   selector: 'app-add-product',
