@@ -32,20 +32,13 @@ background-color: burlywood;
 
 }
 
-/*
- *       ___      ___       ___  __    __   __   __
- * |  | |__   /\   |  |__| |__  |__)  /  ` /__` /__`
- * |/\| |___ /~~\  |  |  | |___ |  \ .\__, .__/ .__/
- *
- * Minecraft weather effects with pure CSS
- * © Copyright 2014 Moritz Marquardt
- *
- * https://github.com/moqmar/weather.css
- *
- * Licensed under MIT License (http://opensource.org/licenses/MIT)
- */
+.new-products {
+  text-align: center;
+  color: red;
 
-/* main element */
+}
+
+
 .weather {
   position: relative; overflow: hidden;
 }
