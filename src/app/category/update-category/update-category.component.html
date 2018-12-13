@@ -1,11 +1,13 @@
+<body>
 <button routerLink="">Home</button>
 
 <form [formGroup]="updateCategoryForm" (ngSubmit)="save()">
-
+  <div  style="text-align: center;">
   <label>
-    Category Name:
+    <p>Category Name:</p>
     <input type="text" formControlName="categoryName">
   </label>
   <button type="submit" >Save</button>
-
+  </div>
 </form>
+</body>

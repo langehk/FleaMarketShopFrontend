@@ -1,27 +1,32 @@
-<button routerLink="">Home</button>
-
-<form [formGroup]="updateProductForm" (ngSubmit)="save()">
-
+<body>
+  <button routerLink="">Home</button>
+  <form [formGroup]="updateProductForm" (ngSubmit)="save()">
+    <div  style="text-align: center;">
   <label>
-    Product Name:
+    <p>Product Name:</p>
     <input type="text" formControlName="productName">
   </label>
-
+      <br />
+      <br />
   <label>
-    Product price:
+    <p>Product price:</p>
     <input type="number" formControlName="productPrice">
   </label>
-
+      <br />
+      <br />
   <label>
-    Product Description:
+    <p>Product Description:</p>
     <input type="text" formControlName="productDescription">
   </label>
-
+      <br />
+      <br />
   <label>
-    Main Picture Url:
+    <p>Main Picture Url:</p>
     <input type="text" formControlName="mainPictureString">
   </label>
-
+      <br />
+      <br />
   <button type="submit" >Save</button>
-
-</form>
+  </div>
+  </form>
+</body>
