@@ -43,19 +43,13 @@
 
 <form [formGroup]="categoryForm">
   <select [formControlName]="categoryControl">
-<option [value]="category.categoryId" *ngFor="let category of categories">
+<option [ngValue]="category.categoryId" *ngFor="let category of categories">
   {{category.categoryName}}</option>
   </select>
-
-
 </form>
-
-
-
       <br />
       <br />
       </div>
-
   <button type="submit" >Save</button>
     </div>
   </form>
