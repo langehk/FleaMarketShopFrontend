@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService} from "../../shared/Services/product.service";
-import {FormControl, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormControlName, FormGroup} from '@angular/forms';
 import {Router} from "@angular/router";
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import {CategoryService} from "../../shared/Services/category.service";
 import {Category} from "../../shared/Models/category";
 
@@ -14,6 +13,7 @@ import {Category} from "../../shared/Models/category";
 export class AddProductComponent implements OnInit {
 
   categories: Category[];
+
 
   productForm = new FormGroup( {
     productName: new FormControl(''),
@@ -30,7 +30,7 @@ export class AddProductComponent implements OnInit {
     this.categoryService.getCategories().subscribe(next => {this.categories = next})
   }
 
-  save(){
+  save() {
     const product = this.productForm.value;
     this.productService.addProduct(product)
       .subscribe(() => {

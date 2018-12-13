@@ -2,7 +2,7 @@
 <div *ngIf="products">
   <div class="container-fluid">
     <div class="card-deck">
-      <div *ngFor="let product of products">
+      <div *ngFor="let product of products" class="col-md-6 col-sm-12 col-lg-4">
 
         <div class="card border-dark mb-3" style="width: 14em">
           <img class="card-img-top" style="height: 150px" src={{product.mainPictureString}} alt="Image of {{product.productName}}">

@@ -1,11 +1,13 @@
 .container-fluid{
 
 }
+
 body {
   background-color: burlywood;
   color: darkgreen;
 }
 
-.card{
+
+.card {
   margin-top: 20px;
 }
