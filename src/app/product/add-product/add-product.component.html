@@ -36,11 +36,21 @@
   <br />
   <br />
 
-      <div formGroupName="category">
-        <label>
-          <p>Category:</p>
-    <input style="background: darkgray" type="number" formControlName="categoryId">
-      </label>
+  <div formGroupName="category">
+    <label>
+      <p>Category:</p>
+    </label>
+
+<form [formGroup]="categoryForm">
+  <select [formControlName]="categoryControl">
+<option [value]="category" *ngFor="let category of categories">
+  {{category}}</option>
+  </select>
+
+
+</form>
+
+
 
       <br />
       <br />

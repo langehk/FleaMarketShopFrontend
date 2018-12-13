@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService} from "../../shared/Services/product.service";
-import {FormControl, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import {Router} from "@angular/router";
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
@@ -20,12 +20,18 @@ export class AddProductComponent implements OnInit {
       categoryId: new FormControl('')})
   });
 
-  constructor(private productService: ProductService, private router: Router) { }
+  categoryForm: FormGroup;
+
+  categories = ['USA', 'Canada', 'Uk']
+  constructor(private productService: ProductService, private router: Router, private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.categoryForm = this.fb.group({
+      categoryControl: ['Category']
+    });
   }
 
-  save(){
+  save() {
     const product = this.productForm.value;
     this.productService.addProduct(product)
       .subscribe(() => {
