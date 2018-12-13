@@ -1,11 +1,11 @@
 .container-fluid{
-  margin-top: 20px;
+width: fit-content;
 }
 .card-group{
 
 }
 .card{
-
+  margin-top: 20px;
 }
 
 body {
