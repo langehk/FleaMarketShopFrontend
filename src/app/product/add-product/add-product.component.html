@@ -8,48 +8,32 @@
     <p>Product Name:</p>
     <input style="background: darkgray" type="text" formControlName="productName">
   </label>
-
-  <br />
   <br />
 
   <label>
     <p>Product price:</p>
     <input style="background: darkgray"  type="number" formControlName="productPrice">
   </label>
-
-  <br />
   <br />
 
   <label>
     <p>Product Description:</p>
     <input style="background: darkgray" type="text" formControlName="productDescription">
   </label>
-
-  <br />
   <br />
 
   <label>
     <p>Main Picture Url:</p>
     <input style="background: darkgray" type="text" formControlName="mainPictureString">
   </label>
-
   <br />
-  <br />
-
-  <div formGroupName="category">
-    <label>
-      <p>Category:</p>
-    </label>
-
-<form [formGroup]="categoryForm">
-  <select [formControlName]="categoryControl">
-<option [ngValue]="category.categoryId" *ngFor="let category of categories">
-  {{category.categoryName}}</option>
-  </select>
-</form>
-      <br />
-      <br />
+  <p>Category:</p>
+      <div formGroupName="category">
+      <select formControlName="categoryId">
+        <option *ngFor="let cat of categories" [value]="cat.categoryId">{{cat.categoryName}}</option>
+      </select>
       </div>
+  <br />
   <button type="submit" >Save</button>
     </div>
   </form>
