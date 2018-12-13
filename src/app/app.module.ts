@@ -29,6 +29,7 @@ import { CategoryComponent } from './category/category/category.component';
 import { ProductsByCategoryComponent } from './category/products-by-category/products-by-category.component';
 import { AddProductImageComponent } from './productimage/add-product-image/add-product-image.component';
 import { ListProductImageComponent } from './productimage/list-product-image/list-product-image.component'
+import { StorageServiceModule} from "angular-webstorage-service";
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ListProductImageComponent } from './productimage/list-product-image/lis
     HttpClientModule,
     ButtonsModule.forRoot(),
     CarouselModule, FormsModule,
-    SelectDropDownModule
+    SelectDropDownModule,
+    StorageServiceModule
   ],
   providers: [AuthGuard,
     AuthenticationService,
