@@ -14,7 +14,7 @@ export class AddProductImageComponent implements OnInit {
     product: new FormGroup({
       ProductId: new FormControl('')
     })
-  })
+  });
 
   constructor(private productImageService: ProductImageService) { }
 
