@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
-import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -36,7 +35,6 @@ import { ListProductImageComponent } from './productimage/list-product-image/lis
     WelcomeComponent,
     LoginComponent,
     AboutComponent,
-    ShoppingcartComponent,
     NavbarComponent,
     AdminComponent,
     ProductsComponent,
