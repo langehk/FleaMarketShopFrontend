@@ -16,25 +16,26 @@ import {ListCategoriesComponent} from './category/list-categories/list-categorie
 import {ListProductsComponent} from './product/list-products/list-products.component';
 import {AddProductImageComponent} from './productimage/add-product-image/add-product-image.component';
 import {ListProductImageComponent} from './productimage/list-product-image/list-product-image.component';
-import {BsDropdownModule} from "ngx-bootstrap";
+import {BsDropdownModule} from 'ngx-bootstrap';
+import {AuthGuard} from './shared/guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent},
-  { path: 'admin', component: AdminComponent},
+  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard]},
   { path: 'products', component: ProductsComponent},
   { path: 'productdetails/:id', component: ProductDetailsComponent},
-  { path: 'addproduct', component: AddProductComponent},
-  { path: 'updateproduct/:id', component: UpdateProductComponent},
-  { path: 'addcategory', component: AddCategoryComponent},
-  { path: 'updatecategory/:id', component: UpdateCategoryComponent},
+  { path: 'addproduct', component: AddProductComponent, canActivate: [AuthGuard]},
+  { path: 'updateproduct/:id', component: UpdateProductComponent, canActivate: [AuthGuard]},
+  { path: 'addcategory', component: AddCategoryComponent, canActivate: [AuthGuard]},
+  { path: 'updatecategory/:id', component: UpdateCategoryComponent, canActivate: [AuthGuard]},
   { path: 'category', component: CategoryComponent},
   { path: 'category/:id', component: ProductsByCategoryComponent},
-  { path: 'categorylist', component: ListCategoriesComponent},
-  { path: 'productlist', component: ListProductsComponent},
-  { path: 'addproductimage', component: AddProductImageComponent},
-  { path: 'productimagelist', component: ListProductImageComponent}
+  { path: 'categorylist', component: ListCategoriesComponent, canActivate: [AuthGuard]},
+  { path: 'productlist', component: ListProductsComponent, canActivate: [AuthGuard]},
+  { path: 'addproductimage', component: AddProductImageComponent, canActivate: [AuthGuard]},
+  { path: 'productimagelist', component: ListProductImageComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

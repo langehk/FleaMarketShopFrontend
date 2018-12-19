@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthenticationService} from "../shared/Services/authentication.service";
-import {Router} from "@angular/router";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {AuthenticationService} from '../shared/Services/authentication.service';
+import {Router} from '@angular/router';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
     this.authenticationService.login(this.username.value, this.password.value)
       .subscribe(
         success => {
-          this.router.navigate(['/']);
+          this.router.navigate(['admin']);
         },
         error => {
           this.errormessage = error.message;
