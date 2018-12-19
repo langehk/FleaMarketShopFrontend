@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService} from "../../shared/Services/product.service";
+import { ProductService} from '../../shared/Services/product.service';
 import {FormBuilder, FormControl, FormControlName, FormGroup} from '@angular/forms';
-import {Router} from "@angular/router";
-import {CategoryService} from "../../shared/Services/category.service";
-import {Category} from "../../shared/Models/category";
+import {Router} from '@angular/router';
+import {CategoryService} from '../../shared/Services/category.service';
+import {Category} from '../../shared/Models/category';
 
 @Component({
   selector: 'app-add-product',
@@ -27,7 +27,7 @@ export class AddProductComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router, private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.categoryService.getCategories().subscribe(next => {this.categories = next})
+    this.categoryService.getCategories().subscribe(next => {this.categories = next;});
   }
 
   save() {

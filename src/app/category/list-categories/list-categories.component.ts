@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Category} from "../../shared/Models/category";
-import {CategoryService} from "../../shared/Services/category.service";
+import {Category} from '../../shared/Models/category';
+import {CategoryService} from '../../shared/Services/category.service';
 
 @Component({
   selector: 'app-list-categories',
@@ -14,23 +14,19 @@ export class ListCategoriesComponent implements OnInit {
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.refresh()
+    this.refresh();
   }
 
-  refresh()
-  {
+  refresh() {
     this.categoryService.getCategories()
-      .subscribe(listOfCategories =>
-      {
+      .subscribe(listOfCategories => {
         this.categories = listOfCategories;
       });
   }
 
-  delete(id: number)
-  {
+  delete(id: number) {
     this.categoryService.deleteCategory(id)
-      .subscribe(message =>
-      {
+      .subscribe(message => {
         console.log('Deleted category, got message: ' + message);
         this.refresh();
       });

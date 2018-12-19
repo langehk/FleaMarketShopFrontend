@@ -29,22 +29,19 @@ export class ProductService {
     return this.http.get<Product>( environment.apiUrl + '/product/' + id, httpOptions);
   }
 
-  addProduct(product: Product): Observable<Product>
-  {
+  addProduct(product: Product): Observable<Product> {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
     return this.http.post<Product>( environment.apiUrl + '/product/', product, httpOptions);
   }
 
-  updateProduct(product: Product): Observable<Product>
-  {
+  updateProduct(product: Product): Observable<Product> {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
     return this.http.put<Product>(environment.apiUrl + '/product/' + product.productId, product, httpOptions);
   }
 
-  deleteProduct(id: number): Observable<any>
-  {
+  deleteProduct(id: number): Observable<any> {
     httpOptions.headers = httpOptions.headers.set('Authorization', 'Bearer ' + this.authService.getToken());
 
     return this.http.delete(environment.apiUrl + '/product/' + id, httpOptions);

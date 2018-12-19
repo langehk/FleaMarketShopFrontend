@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {CategoryService} from "../../shared/Services/category.service";
-import {Router} from "@angular/router";
-import {FormControl, FormGroup} from "@angular/forms";
+import {CategoryService} from '../../shared/Services/category.service';
+import {Router} from '@angular/router';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-add-category',

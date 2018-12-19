@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {ProductService} from "../../shared/Services/product.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {FormControl, FormGroup} from '@angular/forms';
+import {ProductService} from '../../shared/Services/product.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-update-product',
@@ -34,7 +34,7 @@ export class UpdateProductComponent implements OnInit {
     });
   }
 
-  save(){
+  save() {
     const product = this.updateProductForm.value;
     product.productId = this.id;
     this.productService.updateProduct(product)

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import {CategoryService} from "../../shared/Services/category.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {FormControl, FormGroup} from '@angular/forms';
+import {CategoryService} from '../../shared/Services/category.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-update-category',
@@ -28,7 +28,7 @@ export class UpdateCategoryComponent implements OnInit {
     });
   }
 
-  save(){
+  save() {
     const category = this.updateCategoryForm.value;
     category.categoryId = this.id;
     this.categoryService.updateCategory(category)

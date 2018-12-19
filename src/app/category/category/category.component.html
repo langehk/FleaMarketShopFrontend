@@ -3,18 +3,12 @@
   <div class="container-fluid">
     <div class="card-deck">
       <div *ngFor="let category of categories" class="col-md-6 col-sm-12 col-lg-4">
-
         <div class="card border-dark mb-3" style="width: 14em">
-
           <div class="card-body" style="background: lightgray">
-
             <h5 class="card-title">{{category.categoryName}}</h5>
-
-
             <a routerLink="/category/{{category.categoryId}}" class="btn btn-outline-success" style="width: 100%">Show</a>
           </div>
         </div>
-
       </div>
     </div>
   </div>
