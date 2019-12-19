@@ -27,7 +27,7 @@ export class AddProductComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router, private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.categoryService.getCategories().subscribe(next => {this.categories = next;});
+    this.categoryService.getCategories().subscribe(next => {this.categories = next; });
   }
 
   save() {
